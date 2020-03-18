@@ -335,7 +335,7 @@ def main(args):
       filepath = os.path.join(os.path.dirname(args.file), filename)
       os.rename(args.file, filepath)
 
-    return 0,
+    return title,
   except OSError:
     return 4, 'Error: pdftohtml not found'
   except subprocess.CalledProcessError:
